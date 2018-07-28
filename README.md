@@ -2,8 +2,11 @@
 
 ## Code and Charts
 
-Before
-![before](https://raw.githubusercontent.com/luosz/cuda-visibility/master/before.png)
+Code
+![Code](HTMLFiles/portfolio_1.gif)
+![Code](HTMLFiles/portfolio_2.gif)
+![Code](HTMLFiles/portfolio_3.gif)
 
-After
-![after](https://raw.githubusercontent.com/luosz/cuda-visibility/master/after.png)
+Charts
+![Charts](HTMLFiles/portfolio_4.gif)
+![Charts](HTMLFiles/portfolio_5.gif)
