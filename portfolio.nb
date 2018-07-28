@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   1064534,      18943]
-NotebookOptionsPosition[   1062387,      18901]
-NotebookOutlinePosition[   1062766,      18917]
-CellTagsIndexPosition[   1062723,      18914]
+NotebookDataLength[   1065572,      18954]
+NotebookOptionsPosition[   1063555,      18915]
+NotebookOutlinePosition[   1063934,      18931]
+CellTagsIndexPosition[   1063891,      18928]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -50,7 +50,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"{", 
      RowBox[{
-     "s", ",", "portfolio", ",", "data", ",", "symbols", ",", "std", ",", 
+     "s", ",", "mean", ",", "data", ",", "symbols", ",", "std", ",", 
       "return"}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"s", "=", 
@@ -59,7 +59,7 @@ Cell[BoxData[{
         RowBox[{"NormalizeData", "[", 
          RowBox[{"#", ",", "start", ",", "end"}], "]"}], "&"}], "/@", 
        "stocks"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"portfolio", "=", 
+     RowBox[{"mean", "=", 
       RowBox[{"Transpose", "@", 
        RowBox[{"{", 
         RowBox[{
@@ -79,20 +79,19 @@ Cell[BoxData[{
             ")"}]}]}]}], "}"}]}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"data", "=", 
       RowBox[{"s", "~", "Join", "~", 
-       RowBox[{"{", "portfolio", "}"}]}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"{", "mean", "}"}]}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"symbols", "=", 
       RowBox[{"stocks", "~", "Join", "~", 
-       RowBox[{"{", "\"\<portfolio\>\"", "}"}]}]}], ";", 
-     "\[IndentingNewLine]", 
+       RowBox[{"{", "\"\<mean\>\"", "}"}]}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"std", "=", 
       RowBox[{"StandardDeviation", "@", 
-       RowBox[{"portfolio", "[", 
+       RowBox[{"mean", "[", 
         RowBox[{"[", 
          RowBox[{"All", ",", "2"}], "]"}], "]"}]}]}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"return", "=", 
       RowBox[{"Last", "@", 
-       RowBox[{"portfolio", "[", 
+       RowBox[{"mean", "[", 
         RowBox[{"[", 
          RowBox[{"All", ",", "2"}], "]"}], "]"}]}]}], ";", 
      "\[IndentingNewLine]", 
@@ -106,7 +105,9 @@ Cell[BoxData[{
          RowBox[{"BaseStyle", "\[Rule]", 
           RowBox[{"{", 
            RowBox[{"FontSize", "\[Rule]", "20"}], "}"}]}], ",", 
-         RowBox[{"PlotRange", "->", "All"}]}], "]"}], ",", 
+         RowBox[{"PlotRange", "->", "All"}], ",", 
+         RowBox[{"PlotLabel", "\[Rule]", 
+          RowBox[{"DateString", "@", "end"}]}]}], "]"}], ",", 
        RowBox[{
         RowBox[{"{", 
          RowBox[{"return", ",", "std", ",", 
@@ -231,7 +232,9 @@ Cell[BoxData[{
          RowBox[{"BaseStyle", "\[Rule]", 
           RowBox[{"{", 
            RowBox[{"FontSize", "\[Rule]", "20"}], "}"}]}], ",", 
-         RowBox[{"PlotRange", "->", "All"}]}], "]"}], ",", 
+         RowBox[{"PlotRange", "->", "All"}], ",", 
+         RowBox[{"PlotLabel", "\[Rule]", 
+          RowBox[{"DateString", "@", "end"}]}]}], "]"}], ",", 
        RowBox[{"returnStdQuotient", "//", 
         RowBox[{
          RowBox[{"TableForm", "[", 
@@ -274,11 +277,11 @@ Cell[BoxData[{
    3.741785545838829*^9}, {3.7417857493103504`*^9, 3.7417857735840898`*^9}, {
    3.7417858169575205`*^9, 3.7417858651555605`*^9}, {3.7417858975597286`*^9, 
    3.741785993686519*^9}, {3.7417860298458877`*^9, 3.7417860485860057`*^9}, {
-   3.7417861050420856`*^9, 
-   3.7417861117230673`*^9}},ExpressionUUID->"8c08837f-8e1b-421e-be78-\
+   3.7417861050420856`*^9, 3.7417861117230673`*^9}, {3.7417863727016993`*^9, 
+   3.741786383576395*^9}, {3.7417864529240465`*^9, 3.74178645417852*^9}, {
+   3.7417865003535986`*^9, 
+   3.7417865398715496`*^9}},ExpressionUUID->"8c08837f-8e1b-421e-be78-\
 0bc82eda6287"],
-
-Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
@@ -306,31 +309,15 @@ Cell[BoxData[{
        RowBox[{"2", ",", " ", "\"\<Years\>\""}], "]"}]}]}], "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"end", "=", "Today"}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"DateString", "@", "end"}]}], "Input",
+  RowBox[{"end", "=", "Today"}], ";"}]}], "Input",
  CellChangeTimes->{{3.687000687380389*^9, 3.687000691123763*^9}, {
   3.687614865311994*^9, 3.6876148655927954`*^9}, {3.687615693446018*^9, 
   3.6876157159117823`*^9}, {3.6876157613395433`*^9, 3.6876158485145035`*^9}, {
   3.6876161174929743`*^9, 3.687616121566601*^9}, {3.6957146336464562`*^9, 
   3.6957146442638135`*^9}, {3.695714683683401*^9, 3.6957146874316454`*^9}, {
-  3.741785625709668*^9, 
-  3.7417856327172346`*^9}},ExpressionUUID->"ca58564d-e2c2-4c41-a41b-\
+  3.741785625709668*^9, 3.7417856327172346`*^9}, {3.7417865063699627`*^9, 
+  3.741786506674173*^9}},ExpressionUUID->"ca58564d-e2c2-4c41-a41b-\
 4195dc58339b"],
-
-Cell[BoxData["\<\"Sat 28 Jul 2018\"\>"], "Output",
- CellChangeTimes->{
-  3.7417228083265953`*^9, 3.741724918988835*^9, 3.7417284347693033`*^9, {
-   3.741728833514659*^9, 3.741728847821767*^9}, 3.7417289025342145`*^9, {
-   3.74172893532943*^9, 3.7417289553680916`*^9}, 3.741729457102761*^9, 
-   3.741730836925232*^9, 3.7417313476549263`*^9, 3.7417313974215846`*^9, 
-   3.741731493017138*^9, 3.74173169555871*^9, 3.7417317787629538`*^9, 
-   3.741731849835723*^9, 3.7417318816644945`*^9, 3.74177910441216*^9, 
-   3.741779167835147*^9, 3.7417795094910355`*^9, 3.741779543795377*^9, 
-   3.741779743663068*^9, 3.741780632805236*^9, 3.7417855931591654`*^9, 
-   3.7417856386232405`*^9, 3.7417857093828344`*^9, 
-   3.7417861538613353`*^9},ExpressionUUID->"031db2a4-e1d4-456c-b7f2-\
-afcc354c90a7"]
-}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -3703,7 +3690,8 @@ t/Qlfc6Xw/turcO3h31Iflfwa89NarOzSP5w8IY8Q/30Q0yn/wC6w+m8
                (Identity[#]& )[
                 Part[#, 1]], 
                (Identity[#]& )[
-                Part[#, 2]]}& )}}, 
+                Part[#, 2]]}& )}}, PlotLabel -> 
+         FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
          PlotRange -> {{3.5840448*^9, 3.741552*^9}, {0, 11.972520985887028`}},
           PlotRangeClipping -> True, PlotRangePadding -> {{
             Scaled[0.02], 
@@ -6804,7 +6792,8 @@ KaHixA==
                (Identity[#]& )[
                 Part[#, 1]], 
                (Identity[#]& )[
-                Part[#, 2]]}& )}}, 
+                Part[#, 2]]}& )}}, PlotLabel -> 
+         FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
          PlotRange -> {{3.5840448*^9, 3.741552*^9}, {0, 11.972520985887028`}},
           PlotRangeClipping -> True, PlotRangePadding -> {{
             Scaled[0.02], 
@@ -7972,7 +7961,8 @@ ng==
                (Identity[#]& )[
                 Part[#, 1]], 
                (Identity[#]& )[
-                Part[#, 2]]}& )}}, 
+                Part[#, 2]]}& )}}, PlotLabel -> 
+         FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
          PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {
            0, 2.1115384615384616`}}, PlotRangeClipping -> True, 
          PlotRangePadding -> {{
@@ -8841,7 +8831,8 @@ hjMHTYIfrQ8d+c2XWbIWbrtOGGCZpZFwhKd/qvtHJev/A8U4Kjs=
                (Identity[#]& )[
                 Part[#, 1]], 
                (Identity[#]& )[
-                Part[#, 2]]}& )}}, 
+                Part[#, 2]]}& )}}, PlotLabel -> 
+         FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
          PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {
            0, 2.4301475475209355`}}, PlotRangeClipping -> True, 
          PlotRangePadding -> {{
@@ -9089,8 +9080,10 @@ hjMHTYIfrQ8d+c2XWbIWbrtOGGCZpZFwhKd/qvtHJev/A8U4Kjs=
    3.741779515945411*^9, 3.741779556290058*^9, {3.7417796862497215`*^9, 
    3.7417797218920383`*^9}, 3.7417797555750155`*^9, 3.741780644066273*^9, 
    3.741785605626954*^9, 3.741785645008353*^9, 3.741785724676874*^9, 
-   3.7417861685355034`*^9},ExpressionUUID->"b05c84f4-4da8-4ab1-a831-\
-f451ef9212f7"]
+   3.7417861685355034`*^9, 3.7417864110693116`*^9, 3.7417864622797227`*^9, 
+   3.741786515766494*^9, 
+   3.7417865502657285`*^9},ExpressionUUID->"96457058-43c3-4ec8-845d-\
+6e980a714c19"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -10024,7 +10017,8 @@ xBPgIT7ZrXulMb8PHHsr4NjmJOY/AA9rpfroFNZz/wOUnddW
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0.9169024253448067, 
         1.6834021091242553`}}, PlotRangeClipping -> True, 
        PlotRangePadding -> {{
@@ -10033,7 +10027,7 @@ xBPgIT7ZrXulMb8PHHsr4NjmJOY/AA9rpfroFNZz/wOUnddW
           Scaled[0.05], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"VTI\"", "\"EDV\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"VTI\"", "\"EDV\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -10353,9 +10347,10 @@ xBPgIT7ZrXulMb8PHHsr4NjmJOY/AA9rpfroFNZz/wOUnddW
    3.741731857281492*^9, 3.74173188920453*^9, 3.741779117707605*^9, 
    3.741779181272019*^9, 3.741779562967867*^9, 3.741779758384353*^9, 
    3.7417806468415794`*^9, 3.7417856085749683`*^9, 3.741785647674137*^9, 
-   3.741785727613413*^9, 
-   3.7417861713748145`*^9},ExpressionUUID->"8c97053b-ef98-452d-8fbf-\
-bc7d6265f6c3"]
+   3.741785727613413*^9, 3.7417861713748145`*^9, 3.741786414155326*^9, 
+   3.7417864649635043`*^9, 3.741786518438977*^9, 
+   3.7417865529814816`*^9},ExpressionUUID->"c0ec4f22-303c-439d-acd7-\
+01c8c16fda46"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -11241,7 +11236,8 @@ npZqtIckud56DuUfBxf6mt2oWkn5w+Dc0jvC+jDKfwDu+1Aw2WH215H/A2cU
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0, 1.699863574351978}}, 
        PlotRangeClipping -> True, PlotRangePadding -> {{
           Scaled[0.02], 
@@ -11249,7 +11245,7 @@ npZqtIckud56DuUfBxf6mt2oWkn5w+Dc0jvC+jDKfwDu+1Aw2WH215H/A2cU
           Scaled[0.02], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"SPY\"", "\"SH\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"SPY\"", "\"SH\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -11568,9 +11564,10 @@ npZqtIckud56DuUfBxf6mt2oWkn5w+Dc0jvC+jDKfwDu+1Aw2WH215H/A2cU
    3.7417317869962664`*^9, 3.7417318581083927`*^9, 3.7417318900224094`*^9, 
    3.741779118516082*^9, 3.7417791820001636`*^9, 3.7417795636715403`*^9, 
    3.7417797592976356`*^9, 3.7417806477284064`*^9, 3.741785609565635*^9, 
-   3.741785648529046*^9, 3.7417857285107417`*^9, 
-   3.741786172273141*^9},ExpressionUUID->"9ca9b4f8-9f10-4cd4-b0f6-\
-78909880c557"],
+   3.741785648529046*^9, 3.7417857285107417`*^9, 3.741786172273141*^9, 
+   3.741786415057664*^9, 3.7417864657959676`*^9, 3.741786519282407*^9, 
+   3.7417865536926613`*^9},ExpressionUUID->"8efe41c5-99e6-4213-a2b2-\
+f1b802dd9c9f"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -12455,7 +12452,8 @@ BSe9rpE2gO/Xbf/nsfVPVL5l6Pk/y1iPkw==
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0, 1.6439694361156785`}}, 
        PlotRangeClipping -> True, PlotRangePadding -> {{
           Scaled[0.02], 
@@ -12463,7 +12461,7 @@ BSe9rpE2gO/Xbf/nsfVPVL5l6Pk/y1iPkw==
           Scaled[0.02], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"IWM\"", "\"RWM\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"IWM\"", "\"RWM\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -12782,9 +12780,10 @@ BSe9rpE2gO/Xbf/nsfVPVL5l6Pk/y1iPkw==
    3.7417317869962664`*^9, 3.7417318581083927`*^9, 3.7417318900224094`*^9, 
    3.741779118516082*^9, 3.7417791820001636`*^9, 3.7417795636715403`*^9, 
    3.7417797592976356`*^9, 3.7417806477284064`*^9, 3.741785609565635*^9, 
-   3.741785648529046*^9, 3.7417857285107417`*^9, 
-   3.7417861730235977`*^9},ExpressionUUID->"6363a629-914b-4cb7-b58f-\
-aa2c4ce0e13f"]
+   3.741785648529046*^9, 3.7417857285107417`*^9, 3.741786172273141*^9, 
+   3.741786415057664*^9, 3.7417864657959676`*^9, 3.741786519282407*^9, 
+   3.741786554425289*^9},ExpressionUUID->"31919797-5669-4533-8305-\
+3815ea891c3f"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -13659,7 +13658,8 @@ iZxWeX5vuHX9ZSfRT8p/Ft5jYap272HLnP8BnCLlxg==
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0, 2.4301475475209355`}}, 
        PlotRangeClipping -> True, PlotRangePadding -> {{
           Scaled[0.02], 
@@ -13667,7 +13667,7 @@ iZxWeX5vuHX9ZSfRT8p/Ft5jYap272HLnP8BnCLlxg==
           Scaled[0.02], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"QQQ\"", "\"PSQ\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"QQQ\"", "\"PSQ\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -13987,8 +13987,10 @@ iZxWeX5vuHX9ZSfRT8p/Ft5jYap272HLnP8BnCLlxg==
    3.7417318916419153`*^9, 3.74177912017979*^9, 3.7417791834759645`*^9, 
    3.741779565099868*^9, 3.7417797609714975`*^9, 3.7417806493340874`*^9, 
    3.741785611718628*^9, 3.7417856502772784`*^9, 3.741785730142189*^9, 
-   3.7417861739074707`*^9},ExpressionUUID->"238d4d68-1690-4994-889d-\
-c0206c3d6144"],
+   3.7417861739074707`*^9, 3.7417864167125173`*^9, 3.741786467373517*^9, 
+   3.741786520890912*^9, 
+   3.7417865553689427`*^9},ExpressionUUID->"4c705610-c497-4860-b712-\
+e1214901d383"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -14821,7 +14823,8 @@ HQwvrjWsfXLV+5VSWNlnw7woPk92s9LhfnnkNJk7n48ohsGbmzZJH83nKep5
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0, 1.32418001525553}}, 
        PlotRangeClipping -> True, PlotRangePadding -> {{
           Scaled[0.02], 
@@ -14829,7 +14832,7 @@ HQwvrjWsfXLV+5VSWNlnw7woPk92s9LhfnnkNJk7n48ohsGbmzZJH83nKep5
           Scaled[0.02], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"EEM\"", "\"EUM\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"EEM\"", "\"EUM\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -15149,8 +15152,10 @@ HQwvrjWsfXLV+5VSWNlnw7woPk92s9LhfnnkNJk7n48ohsGbmzZJH83nKep5
    3.7417318916419153`*^9, 3.74177912017979*^9, 3.7417791834759645`*^9, 
    3.741779565099868*^9, 3.7417797609714975`*^9, 3.7417806493340874`*^9, 
    3.741785611718628*^9, 3.7417856502772784`*^9, 3.741785730142189*^9, 
-   3.7417861746356153`*^9},ExpressionUUID->"2f97ca45-5a93-4c61-981f-\
-506ff7607e6c"],
+   3.7417861739074707`*^9, 3.7417864167125173`*^9, 3.741786467373517*^9, 
+   3.741786520890912*^9, 
+   3.7417865561339855`*^9},ExpressionUUID->"c3b72ec0-9ae1-4505-998b-\
+32478788cb48"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -16002,7 +16007,8 @@ puf3U/VCuFefaX+q8vcYyTc4p4+LcyC/L8jtDVhvqx4fbvn+oOoHp9R9+O6q
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0.631288441145281, 
         1.2495848555297244`}}, PlotRangeClipping -> True, 
        PlotRangePadding -> {{
@@ -16011,7 +16017,7 @@ puf3U/VCuFefaX+q8vcYyTc4p4+LcyC/L8jtDVhvqx4fbvn+oOoHp9R9+O6q
           Scaled[0.05], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"EFA\"", "\"EFZ\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"EFA\"", "\"EFZ\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -16331,8 +16337,10 @@ puf3U/VCuFefaX+q8vcYyTc4p4+LcyC/L8jtDVhvqx4fbvn+oOoHp9R9+O6q
    3.7417318916419153`*^9, 3.74177912017979*^9, 3.7417791834759645`*^9, 
    3.741779565099868*^9, 3.7417797609714975`*^9, 3.7417806493340874`*^9, 
    3.741785611718628*^9, 3.7417856502772784`*^9, 3.741785730142189*^9, 
-   3.7417861754036674`*^9},ExpressionUUID->"f9eb8bfd-8975-4bce-8c07-\
-d895aa4b6163"]
+   3.7417861739074707`*^9, 3.7417864167125173`*^9, 3.741786467373517*^9, 
+   3.741786520890912*^9, 
+   3.7417865568571386`*^9},ExpressionUUID->"fa690b00-484a-4741-9613-\
+e89f017546b8"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -17311,7 +17319,8 @@ z/Vob0k9hma1g3v28xUGRKA57Ho4X4UKjg4UoL2dwBMjriS06KCFW8A1Gz1T
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0, 1.443115400299035}}, 
        PlotRangeClipping -> True, PlotRangePadding -> {{
           Scaled[0.02], 
@@ -17319,7 +17328,7 @@ z/Vob0k9hma1g3v28xUGRKA57Ho4X4UKjg4UoL2dwBMjriS06KCFW8A1Gz1T
           Scaled[0.02], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"DUST\"", "\"NUGT\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"DUST\"", "\"NUGT\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -17633,8 +17642,10 @@ z/Vob0k9hma1g3v28xUGRKA57Ho4X4UKjg4UoL2dwBMjriS06KCFW8A1Gz1T
    3.741731894002446*^9, 3.7417791224276056`*^9, 3.7417791856469207`*^9, 
    3.7417795672505894`*^9, 3.741779763338724*^9, 3.7417806517131586`*^9, 
    3.7417856142574015`*^9, 3.74178565285947*^9, 3.741785732572831*^9, 
-   3.7417861763432407`*^9},ExpressionUUID->"5d2e7cc4-d248-42bf-aa6f-\
-60613f503d6c"],
+   3.7417861763432407`*^9, 3.7417864191011257`*^9, 3.7417864696447887`*^9, 
+   3.741786523210518*^9, 
+   3.741786557729948*^9},ExpressionUUID->"f7094a61-954a-4036-9c14-\
+b7cc086ae18f"],
 
 Cell[BoxData[
  RowBox[{"{", 
@@ -18573,7 +18584,8 @@ Mizw+MmfOF9yCZyyfE/uks8nlv4ftDI2BQ==
              (Identity[#]& )[
               Part[#, 1]], 
              (Identity[#]& )[
-              Part[#, 2]]}& )}}, 
+              Part[#, 2]]}& )}}, PlotLabel -> 
+       FormBox["\"Sat 28 Jul 2018\"", TraditionalForm], 
        PlotRange -> {{3.5897472*^9, 3.7416384*^9}, {0, 2.024965931300042}}, 
        PlotRangeClipping -> True, PlotRangePadding -> {{
           Scaled[0.02], 
@@ -18581,7 +18593,7 @@ Mizw+MmfOF9yCZyyfE/uks8nlv4ftDI2BQ==
           Scaled[0.02], 
           Scaled[0.05]}}, Ticks -> {{}, Automatic}}],FormBox[
       FormBox[
-       TemplateBox[{"\"JDST\"", "\"JNUG\"", "\"portfolio\""}, "LineLegend", 
+       TemplateBox[{"\"JDST\"", "\"JNUG\"", "\"mean\""}, "LineLegend", 
         DisplayFunction -> (FormBox[
           StyleBox[
            StyleBox[
@@ -18895,8 +18907,10 @@ Mizw+MmfOF9yCZyyfE/uks8nlv4ftDI2BQ==
    3.741731894002446*^9, 3.7417791224276056`*^9, 3.7417791856469207`*^9, 
    3.7417795672505894`*^9, 3.741779763338724*^9, 3.7417806517131586`*^9, 
    3.7417856142574015`*^9, 3.74178565285947*^9, 3.741785732572831*^9, 
-   3.741786177084876*^9},ExpressionUUID->"64b4d8c7-2c73-4e8c-9232-\
-585fa96cf0d6"]
+   3.7417861763432407`*^9, 3.7417864191011257`*^9, 3.7417864696447887`*^9, 
+   3.741786523210518*^9, 
+   3.741786558438629*^9},ExpressionUUID->"df23c7a9-8419-4182-bb9c-\
+a8c7775433aa"]
 }, Open  ]]
 },
 WindowSize->{1217, 677},
@@ -18916,34 +18930,31 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 10537, 258, 825, "Input",ExpressionUUID->"8c08837f-8e1b-421e-be78-0bc82eda6287"],
+Cell[558, 20, 10846, 263, 825, "Input",ExpressionUUID->"8c08837f-8e1b-421e-be78-0bc82eda6287"],
+Cell[11407, 285, 1341, 34, 125, "Input",ExpressionUUID->"ca58564d-e2c2-4c41-a41b-4195dc58339b"],
 Cell[CellGroupData[{
-Cell[11120, 282, 1354, 35, 153, "Input",ExpressionUUID->"ca58564d-e2c2-4c41-a41b-4195dc58339b"],
-Cell[12477, 319, 787, 12, 45, "Output",ExpressionUUID->"031db2a4-e1d4-456c-b7f2-afcc354c90a7"]
+Cell[12773, 323, 1942, 51, 153, "Input",ExpressionUUID->"355366cc-55a8-466b-a4ba-2e50156c19cc"],
+Cell[14718, 376, 496931, 8709, 2637, "Output",ExpressionUUID->"96457058-43c3-4ec8-845d-6e980a714c19"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13301, 336, 1942, 51, 153, "Input",ExpressionUUID->"355366cc-55a8-466b-a4ba-2e50156c19cc"],
-Cell[15246, 389, 496541, 8703, 2423, "Output",ExpressionUUID->"b05c84f4-4da8-4ab1-a831-f451ef9212f7"]
+Cell[511686, 9090, 356, 9, 40, "Input",ExpressionUUID->"450dc594-3d9b-4fdc-9103-d430ebee1359"],
+Cell[512045, 9101, 70771, 1251, 653, "Output",ExpressionUUID->"c0ec4f22-303c-439d-acd7-01c8c16fda46"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[511824, 9097, 356, 9, 54, "Input",ExpressionUUID->"450dc594-3d9b-4fdc-9103-d430ebee1359"],
-Cell[512183, 9108, 70610, 1249, 832, "Output",ExpressionUUID->"8c97053b-ef98-452d-8fbf-bc7d6265f6c3"]
+Cell[582853, 10357, 490, 13, 69, "Input",ExpressionUUID->"4277d921-c313-41ad-9dbe-20988045f588"],
+Cell[583346, 10372, 67517, 1197, 653, "Output",ExpressionUUID->"8efe41c5-99e6-4213-a2b2-f1b802dd9c9f"],
+Cell[650866, 11571, 68550, 1214, 653, "Output",ExpressionUUID->"31919797-5669-4533-8305-3815ea891c3f"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[582830, 10362, 490, 13, 93, "Input",ExpressionUUID->"4277d921-c313-41ad-9dbe-20988045f588"],
-Cell[583323, 10377, 67356, 1195, 832, "Output",ExpressionUUID->"9ca9b4f8-9f10-4cd4-b0f6-78909880c557"],
-Cell[650682, 11574, 68393, 1212, 832, "Output",ExpressionUUID->"6363a629-914b-4cb7-b58f-aa2c4ce0e13f"]
+Cell[719453, 12790, 766, 19, 97, "Input",ExpressionUUID->"b1d487e7-f623-4847-a8d2-c923553c7741"],
+Cell[720222, 12811, 66522, 1181, 653, "Output",ExpressionUUID->"4c705610-c497-4860-b712-e1214901d383"],
+Cell[786747, 13994, 65418, 1163, 653, "Output",ExpressionUUID->"c3b72ec0-9ae1-4505-998b-32478788cb48"],
+Cell[852168, 15159, 66572, 1183, 653, "Output",ExpressionUUID->"fa690b00-484a-4741-9613-e89f017546b8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[719112, 12791, 766, 19, 130, "Input",ExpressionUUID->"b1d487e7-f623-4847-a8d2-c923553c7741"],
-Cell[719881, 12812, 66357, 1178, 832, "Output",ExpressionUUID->"238d4d68-1690-4994-889d-c0206c3d6144"],
-Cell[786241, 13992, 65253, 1160, 832, "Output",ExpressionUUID->"2f97ca45-5a93-4c61-981f-506ff7607e6c"],
-Cell[851497, 15154, 66407, 1180, 832, "Output",ExpressionUUID->"f9eb8bfd-8975-4bce-8c07-d895aa4b6163"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[917941, 16339, 545, 14, 93, "Input",ExpressionUUID->"9d865506-bd6c-4380-8300-cddcfd93fe89"],
-Cell[918489, 16355, 72568, 1281, 832, "Output",ExpressionUUID->"5d2e7cc4-d248-42bf-aa6f-60613f503d6c"],
-Cell[991060, 17638, 71311, 1260, 832, "Output",ExpressionUUID->"64b4d8c7-2c73-4e8c-9232-585fa96cf0d6"]
+Cell[918777, 16347, 545, 14, 69, "Input",ExpressionUUID->"9d865506-bd6c-4380-8300-cddcfd93fe89"],
+Cell[919325, 16363, 72733, 1284, 653, "Output",ExpressionUUID->"f7094a61-954a-4036-9c14-b7cc086ae18f"],
+Cell[992061, 17649, 71478, 1263, 653, "Output",ExpressionUUID->"df23c7a9-8419-4182-bb9c-a8c7775433aa"]
 }, Open  ]]
 }
 ]
