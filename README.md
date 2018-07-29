@@ -9,5 +9,5 @@
 ## The symbols and weights of MTUM's top 10 holdings
 ![Charts](HTMLFiles/portfolio_3.png)
 
-## The portfolio chart and simple analysis e.g. return, standard deviation and risk-adjusted return (return/standard deviation).
+## The portfolio chart and simple analysis e.g. return, standard deviation and return/standard deviation (risk-adjusted return).
 ![Charts](chart.svg)
