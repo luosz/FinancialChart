@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    524114,       9318]
-NotebookOptionsPosition[    522886,       9290]
-NotebookOutlinePosition[    523264,       9306]
-CellTagsIndexPosition[    523221,       9303]
+NotebookDataLength[    524732,       9329]
+NotebookOptionsPosition[    523503,       9301]
+NotebookOutlinePosition[    523882,       9317]
+CellTagsIndexPosition[    523839,       9314]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -190,7 +190,9 @@ Cell[BoxData[{
             RowBox[{"FontSize", "\[Rule]", "20"}], "}"}]}], ",", 
           RowBox[{"PlotRange", "->", "All"}], ",", 
           RowBox[{"PlotLabel", "\[Rule]", 
-           RowBox[{"DateString", "@", "end"}]}]}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"DateString", "@", "start"}], "<>", "\"\<-\>\"", "<>", 
+            RowBox[{"DateString", "@", "end"}]}]}]}], "]"}], ",", 
         RowBox[{"TableForm", "[", 
          RowBox[{"table", ",", 
           RowBox[{"TableHeadings", "\[Rule]", 
@@ -253,8 +255,10 @@ Cell[BoxData[{
    3.7418046679432034`*^9, 3.741804673292595*^9}, 3.74180472685067*^9, 
    3.7418050859635057`*^9, {3.7418062847483563`*^9, 3.7418063168311944`*^9}, {
    3.7418065897784395`*^9, 3.741806590750723*^9}, {3.7418079731528983`*^9, 
-   3.741807998636113*^9}, {3.74184427135149*^9, 
-   3.7418442856805735`*^9}},ExpressionUUID->"8c08837f-8e1b-421e-be78-\
+   3.741807998636113*^9}, {3.74184427135149*^9, 3.7418442856805735`*^9}, {
+   3.7418473174815826`*^9, 3.741847333700386*^9}, 3.741847667409749*^9, {
+   3.7418477246750345`*^9, 
+   3.7418477451498947`*^9}},ExpressionUUID->"8c08837f-8e1b-421e-be78-\
 0bc82eda6287"],
 
 Cell[CellGroupData[{
@@ -335,8 +339,9 @@ Cell[BoxData[
      "4.55376`", ",", "4.37947`", ",", "3.69114`", ",", "3.49097`", ",", 
      "3.36582`", ",", "2.99286`"}], "}"}]}], "}"}]], "Output",
  CellChangeTimes->{{3.74184597396992*^9, 3.741845993209799*^9}, 
-   3.7418460249756184`*^9},ExpressionUUID->"3524d6fe-4e85-418e-9de7-\
-d38069845162"],
+   3.7418460249756184`*^9, 3.7418475288268957`*^9, 
+   3.7418477615398836`*^9},ExpressionUUID->"a359675f-8ade-4677-b578-\
+f8f2d3087d6f"],
 
 Cell[BoxData[
  TagBox[
@@ -3983,7 +3988,7 @@ XZJHS5PBTeEJgdGpSpz/A8Ky8iw=
                  Part[#, 1]], 
                 (Identity[#]& )[
                  Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"Sun 29 Jul 2018\"", TraditionalForm], 
+          FormBox["\"Mon 29 Jul 2013-Sun 29 Jul 2018\"", TraditionalForm], 
           PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {
             0, 11.972520985887028`}}, PlotRangeClipping -> True, 
           PlotRangePadding -> {{
@@ -4846,6 +4851,7 @@ XZJHS5PBTeEJgdGpSpz/A8Ky8iw=
                     RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}]}], 
                     "]"}]}], "}"}], ",", 
                 RowBox[{"{", 
+                  
                   RowBox[{#, ",", #2, ",", #3, ",", #4, ",", #5, ",", #6, 
                     ",", #7, ",", #8, ",", #9, ",", #10, ",", #11, ",", #12}],
                    "}"}], ",", 
@@ -4952,8 +4958,8 @@ XZJHS5PBTeEJgdGpSpz/A8Ky8iw=
            "6.298420311428283`"},
           {
            TagBox["\<\"NFLX\"\>",
-            HoldForm], "10.150509737455941`", "2.3848502841962214`", 
-           "4.2562461068188275`"},
+            HoldForm], "10.150509737455941`", "2.384850284196221`", 
+           "4.256246106818828`"},
           {
            TagBox["\<\"ADBE\"\>",
             HoldForm], "5.401950550134845`", "1.1153301123507668`", 
@@ -5003,8 +5009,9 @@ XZJHS5PBTeEJgdGpSpz/A8Ky8iw=
   Function[BoxForm`e$, 
    TableForm[BoxForm`e$]]]], "Output",
  CellChangeTimes->{{3.74184597396992*^9, 3.741845993209799*^9}, 
-   3.741846033472872*^9},ExpressionUUID->"176fd0aa-2db6-4cf8-a1c1-\
-9fbcd9338d42"]
+   3.7418460249756184`*^9, 3.7418475288268957`*^9, 
+   3.7418477652105184`*^9},ExpressionUUID->"a842d06c-4622-4f02-bf1c-\
+d975b826c619"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -7259,7 +7266,7 @@ e3DblxuVx1RIn7oy+Pw4aFZ5/zOZByewy6LEct1Qkn8f+C/etHZ7E5I/E8x5
                  Part[#, 1]], 
                 (Identity[#]& )[
                  Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"Sun 29 Jul 2018\"", TraditionalForm], 
+          FormBox["\"Mon 29 Jul 2013-Sun 29 Jul 2018\"", TraditionalForm], 
           PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {
             0, 11.972520985887028`}}, PlotRangeClipping -> True, 
           PlotRangePadding -> {{
@@ -7853,8 +7860,8 @@ e3DblxuVx1RIn7oy+Pw4aFZ5/zOZByewy6LEct1Qkn8f+C/etHZ7E5I/E8x5
            "5.887627957761678`"},
           {
            TagBox["\<\"NFLX\"\>",
-            HoldForm], "10.150509737455941`", "2.3848502841962214`", 
-           "4.2562461068188275`"},
+            HoldForm], "10.150509737455941`", "2.384850284196221`", 
+           "4.256246106818828`"},
           {
            TagBox["\<\"ADBE\"\>",
             HoldForm], "5.401950550134845`", "1.1153301123507668`", 
@@ -7902,8 +7909,9 @@ e3DblxuVx1RIn7oy+Pw4aFZ5/zOZByewy6LEct1Qkn8f+C/etHZ7E5I/E8x5
   3.7418076726645756`*^9, 3.741807779696988*^9, 3.7418080263451867`*^9, 
    3.74184430207693*^9, 3.7418444284094963`*^9, {3.7418449229927635`*^9, 
    3.7418449474458146`*^9}, {3.741845980112978*^9, 3.741845999505011*^9}, 
-   3.7418460365618486`*^9},ExpressionUUID->"67263778-bcf5-4399-baa6-\
-f9193f1819f4"]
+   3.7418460365618486`*^9, 3.741847535643696*^9, 
+   3.7418477678366175`*^9},ExpressionUUID->"fdf8a7ed-01ef-49ef-bac0-\
+796601c5aa6d"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -7972,7 +7980,9 @@ Cell[BoxData[
             RowBox[{"FontSize", "\[Rule]", "20"}], "}"}]}], ",", 
           RowBox[{"PlotRange", "->", "All"}], ",", 
           RowBox[{"PlotLabel", "\[Rule]", 
-           RowBox[{"DateString", "@", "end"}]}]}], "]"}], ",", 
+           RowBox[{
+            RowBox[{"DateString", "@", "start"}], "<>", "\"\<-\>\"", "<>", 
+            RowBox[{"DateString", "@", "end"}]}]}]}], "]"}], ",", 
         RowBox[{
          RowBox[{"{", 
           RowBox[{"return", ",", "std", ",", 
@@ -7989,8 +7999,9 @@ Cell[BoxData[
                  "\"\<Return/SD\>\""}], "}"}], ",", "Automatic"}], "}"}]}]}], 
            "]"}], "&"}]}]}], "}"}]}]}]}], "\[IndentingNewLine]", 
    "]"}]}]], "Input",
- CellChangeTimes->{
-  3.74180667994755*^9},ExpressionUUID->"91b3bc04-448a-4fbe-bd3a-ac953ae081e8"],
+ CellChangeTimes->{3.74180667994755*^9, 
+  3.741847347374399*^9},ExpressionUUID->"91b3bc04-448a-4fbe-bd3a-\
+ac953ae081e8"],
 
 Cell[CellGroupData[{
 
@@ -8926,7 +8937,7 @@ xBPgIT7ZrXulMb8PHHsr4NjmJOY/AA9rpfroFNZz/wOUnddW
                  Part[#, 1]], 
                 (Identity[#]& )[
                  Part[#, 2]]}& )}}, PlotLabel -> 
-          FormBox["\"Sun 29 Jul 2018\"", TraditionalForm], 
+          FormBox["\"Mon 29 Jul 2013-Sun 29 Jul 2018\"", TraditionalForm], 
           PlotRange -> {{3.5840448*^9, 3.7416384*^9}, {0.9169024253448067, 
            1.6834021091242553`}}, PlotRangeClipping -> True, 
           PlotRangePadding -> {{
@@ -9283,13 +9294,13 @@ xBPgIT7ZrXulMb8PHHsr4NjmJOY/AA9rpfroFNZz/wOUnddW
    3.7418069878165197`*^9, 3.7418076959659395`*^9, 3.741807787815694*^9, 
    3.7418080271461945`*^9, 3.7418443030990252`*^9, 3.7418444292808723`*^9, {
    3.7418449238561735`*^9, 3.741844948315467*^9}, {3.741845980971382*^9, 
-   3.7418460005419264`*^9}, 
-   3.7418460375490427`*^9},ExpressionUUID->"65b16a8f-8777-4787-8485-\
-296dc27064b7"]
+   3.7418460005419264`*^9}, 3.7418460375490427`*^9, 3.7418475365834475`*^9, 
+   3.7418477687574196`*^9},ExpressionUUID->"0188ddeb-8ac9-4a1d-9d6e-\
+192b07c46622"]
 }, Open  ]]
 },
 WindowSize->{1217, 677},
-WindowMargins->{{-8, Automatic}, {Automatic, 0}},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
 Magnification:>1.35 Inherited,
 FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
 StyleDefinitions->"Default.nb"
@@ -9305,20 +9316,20 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 10637, 237, 657, "Input",ExpressionUUID->"8c08837f-8e1b-421e-be78-0bc82eda6287"],
+Cell[558, 20, 10864, 241, 657, "Input",ExpressionUUID->"8c08837f-8e1b-421e-be78-0bc82eda6287"],
 Cell[CellGroupData[{
-Cell[11220, 261, 1996, 60, 265, "Input",ExpressionUUID->"d3c2a6b3-8e54-4b27-8827-96f018f886c0"],
-Cell[13219, 323, 687, 15, 74, "Output",ExpressionUUID->"3524d6fe-4e85-418e-9de7-d38069845162"],
-Cell[13909, 340, 268066, 4666, 893, "Output",ExpressionUUID->"176fd0aa-2db6-4cf8-a1c1-9fbcd9338d42"]
+Cell[11447, 265, 1996, 60, 265, "Input",ExpressionUUID->"d3c2a6b3-8e54-4b27-8827-96f018f886c0"],
+Cell[13446, 327, 739, 16, 74, "Output",ExpressionUUID->"a359675f-8ade-4677-b578-f8f2d3087d6f"],
+Cell[14188, 345, 268153, 4668, 893, "Output",ExpressionUUID->"a842d06c-4622-4f02-bf1c-d975b826c619"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[282012, 5011, 1493, 34, 125, "Input",ExpressionUUID->"0e26fdaa-eea5-4b0d-904b-2e2598da0763"],
-Cell[283508, 5047, 162954, 2858, 773, "Output",ExpressionUUID->"67263778-bcf5-4399-baa6-f9193f1819f4"]
+Cell[282378, 5018, 1493, 34, 125, "Input",ExpressionUUID->"0e26fdaa-eea5-4b0d-904b-2e2598da0763"],
+Cell[283874, 5054, 163018, 2859, 773, "Output",ExpressionUUID->"fdf8a7ed-01ef-49ef-bac0-796601c5aa6d"]
 }, Open  ]],
-Cell[446477, 7908, 3179, 84, 321, "Input",ExpressionUUID->"91b3bc04-448a-4fbe-bd3a-ac953ae081e8"],
+Cell[446907, 7916, 3302, 87, 321, "Input",ExpressionUUID->"91b3bc04-448a-4fbe-bd3a-ac953ae081e8"],
 Cell[CellGroupData[{
-Cell[449681, 7996, 356, 9, 40, "Input",ExpressionUUID->"450dc594-3d9b-4fdc-9103-d430ebee1359"],
-Cell[450040, 8007, 72830, 1280, 648, "Output",ExpressionUUID->"65b16a8f-8777-4787-8485-296dc27064b7"]
+Cell[450234, 8007, 356, 9, 40, "Input",ExpressionUUID->"450dc594-3d9b-4fdc-9103-d430ebee1359"],
+Cell[450593, 8018, 72894, 1280, 648, "Output",ExpressionUUID->"0188ddeb-8ac9-4a1d-9d6e-192b07c46622"]
 }, Open  ]]
 }
 ]
