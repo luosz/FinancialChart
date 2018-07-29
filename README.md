@@ -7,4 +7,10 @@
 ![Charts](HTMLFiles/portfolio_2.gif)
 
 ## The resultant chart
+png
+![Charts](chart.png)
+svg
 ![Charts](chart.svg)
+eps
+![Charts](chart.eps)
+
