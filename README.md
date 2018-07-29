@@ -3,7 +3,7 @@
 ## Define functions for reading data and charting
 ![Charts](HTMLFiles/portfolio_1.gif)
 
-## Read the top 10 holdings and weights of iShares Edge MSCI USA Momentum Factor ETF (MTUM), and then create a portfolio chart from the data
+## Create a chart from the top 10 holdings of iShares Edge MSCI USA Momentum Factor ETF (MTUM)
 ![Charts](HTMLFiles/portfolio_2.gif)
 
 ## The symbols and weights of MTUM's top 10 holdings
