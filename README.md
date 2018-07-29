@@ -3,7 +3,7 @@
 ## Define functions for reading data and charting
 ![Charts](HTMLFiles/portfolio_1.gif)
 
-## Create a chart from the top 10 holdings of iShares Edge MSCI USA Momentum Factor ETF (MTUM)
+## Create a 5-year chart of the top 10 holdings of iShares Edge MSCI USA Momentum Factor ETF (MTUM)
 ![Charts](HTMLFiles/portfolio_2.gif)
 
 ## The symbols and weights of MTUM's top 10 holdings
