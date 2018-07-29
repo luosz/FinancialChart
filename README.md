@@ -7,4 +7,4 @@
 ![Charts](HTMLFiles/portfolio_2.gif)
 
 ## The resultant chart
-![Charts](HTMLFiles/portfolio_3.gif)
+![Charts](chart.svg)
