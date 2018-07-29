@@ -13,7 +13,7 @@
 ![Charts](chart.svg)
 
 ## The code for creating a 5-year chart of all the equity holdings of MTUM
-![Charts](HTMLFiles/portfolio_7.png)
+![Charts](HTMLFiles/portfolio_7.gif)
 
 ## The symbols and weights of all the equity holdings
 ![Charts](HTMLFiles/portfolio_8.png)
