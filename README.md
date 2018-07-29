@@ -21,6 +21,6 @@
 ## The portfolio chart of the equity holdings with simple analysis i.e. return, standard deviation and return/standard deviation (risk-adjusted return).
 ![Charts](allChart.svg)
 
-## Create a 5-year chart of the ETF itself. Note the ETF's holdings change over time, so the performance of the portfolios formed of its current holdings may be very different from the performance of the ETF itself.
+## Create a 5-year chart of the ETF. Note the ETF's holdings change over time, so the performance of the portfolios formed of its current holdings may be very different from the performance of the ETF itself.
 ![Charts](HTMLFiles/portfolio_9.gif)
 ![Charts](fundChart.svg)
