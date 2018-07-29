@@ -9,14 +9,14 @@
 ## The symbols and weights of the top 10 holdings
 ![Charts](HTMLFiles/portfolio_3.png)
 
-## The portfolio chart of MTUM's top 10 holdings, with simple analysis i.e. return, standard deviation and return/standard deviation (risk-adjusted return).
+## The portfolio chart of the top 10 holdings with simple analysis i.e. return, standard deviation and return/standard deviation (risk-adjusted return).
 ![Charts](chart.svg)
 
 ## The code for creating a 5-year chart of all the equity holdings of MTUM
-![Charts](HTMLFiles/portfolio_7.gif)
+![Charts](HTMLFiles/portfolio_5.gif)
 
 ## The symbols and weights of all the equity holdings
-![Charts](HTMLFiles/portfolio_8.png)
+![Charts](HTMLFiles/portfolio_6.png)
 
-## The portfolio chart of all the equity holdings of MTUM, with simple analysis i.e. return, standard deviation and return/standard deviation (risk-adjusted return).
+## The portfolio chart of all the equity holdings with simple analysis i.e. return, standard deviation and return/standard deviation (risk-adjusted return).
 ![Charts](chart0.svg)
