@@ -555,6 +555,41 @@ html {
   margin-bottom: 7px;
   padding: 8px;
 }
+/* ExternalLanguage:*/
+.ExternalLanguage {
+  font-size: 12px;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
+  color: #000000;
+  background-color: #FAF8F2;
+  border: 1px;
+  border-style: solid;
+  border-color: #DAD4B9;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.ExternalLanguageInline {
+  font-size: 12px;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
+  color: #000000;
+  background-color: #FAF8F2;
+  border: 1px;
+  border-style: solid;
+  border-color: #DAD4B9;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 /* Code:*/
 .Code {
   font-weight: DemiBold;
@@ -720,6 +755,85 @@ html {
   margin-right: 10px;
   margin-top: 3px;
   margin-bottom: 3px;
+  padding: 8px;
+}
+/* Author:*/
+.Author {
+  font-size: 18px;
+  font-family: Source Sans Pro;
+  line-height: 1.16667;
+  margin-left: 64px;
+  margin-right: 120px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+.AuthorInline {
+  font-size: 18px;
+  font-family: Source Sans Pro;
+  line-height: 1.16667;
+  margin-left: 64px;
+  margin-right: 120px;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  padding: 8px;
+}
+/* Affiliation:*/
+.Affiliation {
+  font-size: 16px;
+  font-family: Source Sans Pro;
+  color: #666666;
+  line-height: 1.1875;
+  margin-left: 64px;
+  margin-right: 120px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+.AffiliationInline {
+  font-size: 16px;
+  font-family: Source Sans Pro;
+  color: #666666;
+  line-height: 1.1875;
+  margin-left: 64px;
+  margin-right: 120px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  padding: 8px;
+}
+/* Abstract:*/
+.Abstract {
+  font-size: 15px;
+  font-family: Source Sans Pro;
+  font-style: italic;
+  line-height: 1.2;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #B2B2B2;
+  margin-left: 66px;
+  margin-right: 120px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+.AbstractInline {
+  font-size: 15px;
+  font-family: Source Sans Pro;
+  font-style: italic;
+  line-height: 1.2;
+  border-left: 0px;
+  border-right: 0px;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #B2B2B2;
+  margin-left: 66px;
+  margin-right: 120px;
+  margin-top: 12px;
+  margin-bottom: 12px;
   padding: 8px;
 }
 /* Header:*/
@@ -963,6 +1077,110 @@ html {
   margin-right: 10px;
   padding: 8px;
 }
+/* ExternalLanguageDefault:*/
+.ExternalLanguageDefault {
+  font-size: 12px;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
+  color: #000000;
+  background-color: #FAF8F2;
+  border: 1px;
+  border-style: solid;
+  border-color: #DAD4B9;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.ExternalLanguageDefaultInline {
+  font-size: 12px;
+  font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
+  color: #000000;
+  background-color: #FAF8F2;
+  border: 1px;
+  border-style: solid;
+  border-color: #DAD4B9;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+/* NaturalLanguageInput:*/
+.NaturalLanguageInput {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: normal;
+  margin-left: 66px;
+  margin-right: 21px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
+  display: list-item;
+  list-style-type: square;
+}
+.NaturalLanguageInputInline {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: normal;
+  margin-left: 66px;
+  margin-right: 21px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+/* DeployedNLInput:*/
+.DeployedNLInput {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: normal;
+  border: System`Convert`CSSDump`ToPoint[None];
+  border-style: solid;
+  border-color: #CCCCCC;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+.DeployedNLInputInline {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: normal;
+  border: System`Convert`CSSDump`ToPoint[None];
+  border-style: solid;
+  border-color: #CCCCCC;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 0px;
+}
+/* DeployedWLInput:*/
+.DeployedWLInput {
+  font-size: 11px;
+  font-weight: DemiBold;
+  margin-left: 66px;
+  margin-right: 15px;
+  margin-top: -5px;
+  margin-bottom: 12px;
+  padding: 8px;
+}
+.DeployedWLInputInline {
+  font-size: 11px;
+  font-weight: DemiBold;
+  margin-left: 66px;
+  margin-right: 15px;
+  margin-top: -5px;
+  margin-bottom: 12px;
+  padding: 8px;
+}
 /* MessageName:*/
 .MessageName {
   color: #9B9B9B;
@@ -1079,9 +1297,24 @@ html {
 .CellLabel {
   font-size: 9px;
   font-family: Helvetica;
-  color: #999999;
+  color: #3B6E93;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+/* CellLabelExpired:*/
+.CellLabelExpired {
+  font-size: 9px;
+  font-family: Helvetica;
+  font-style: Italic;
+  color: #999999;
+  padding: 8px;
+}
+.CellLabelExpiredInline {
+  font-size: 9px;
+  font-family: Helvetica;
+  font-style: Italic;
+  color: #999999;
+  padding: 8px;
 }
 /* FrameLabel:*/
 .FrameLabel {
@@ -1600,6 +1833,112 @@ html {
   color: #454F99;
   padding: 8px;
 }
+/* HyperlinkHover:*/
+.HyperlinkHover {
+  text-decoration: underline;
+  color: #454F99;
+  padding: 8px;
+}
+.HyperlinkHoverInline {
+  text-decoration: underline;
+  color: #454F99;
+  padding: 8px;
+}
+/* HyperlinkActionNew:*/
+.HyperlinkActionNew {
+  color: #454F99;
+  padding: 8px;
+}
+.HyperlinkActionNewInline {
+  color: #454F99;
+  padding: 8px;
+}
+/* HyperlinkActionRecycled:*/
+.HyperlinkActionRecycled {
+  color: #454F99;
+  padding: 8px;
+}
+.HyperlinkActionRecycledInline {
+  color: #454F99;
+  padding: 8px;
+}
+/* RefLink:*/
+.RefLink {
+  padding: 8px;
+}
+.RefLinkInline {
+  padding: 8px;
+}
+/* RefLinkPlain:*/
+.RefLinkPlain {
+  padding: 8px;
+}
+.RefLinkPlainInline {
+  padding: 8px;
+}
+/* PackageLink:*/
+.PackageLink {
+  padding: 8px;
+}
+.PackageLinkInline {
+  padding: 8px;
+}
+/* GrayLink:*/
+.GrayLink {
+  padding: 8px;
+}
+.GrayLinkInline {
+  padding: 8px;
+}
+/* TealLink:*/
+.TealLink {
+  padding: 8px;
+}
+.TealLinkInline {
+  padding: 8px;
+}
+/* MenuGrayLink:*/
+.MenuGrayLink {
+  padding: 8px;
+}
+.MenuGrayLinkInline {
+  padding: 8px;
+}
+/* WebLink:*/
+.WebLink {
+  padding: 8px;
+}
+.WebLinkInline {
+  padding: 8px;
+}
+/* GrayWebLink:*/
+.GrayWebLink {
+  padding: 8px;
+}
+.GrayWebLinkInline {
+  padding: 8px;
+}
+/* OrangeLink:*/
+.OrangeLink {
+  padding: 8px;
+}
+.OrangeLinkInline {
+  padding: 8px;
+}
+/* GrayLinkWithIcon:*/
+.GrayLinkWithIcon {
+  padding: 8px;
+}
+.GrayLinkWithIconInline {
+  padding: 8px;
+}
+/* GrayWebLinkWithIcon:*/
+.GrayWebLinkWithIcon {
+  padding: 8px;
+}
+.GrayWebLinkWithIconInline {
+  padding: 8px;
+}
 /* SlideShowNavigationBar:*/
 .SlideShowNavigationBar {
   font-size: 100%;
@@ -1807,6 +2146,58 @@ Floor[--------------------------------------------------]
   margin-bottom: 0px;
   padding: 8px;
 }
+/* SideCode:*/
+.SideCode {
+  font-weight: DemiBold;
+  color: #000000;
+  background-color: #FFFDF5;
+  border: 1px;
+  border-style: solid;
+  border-color: #A1A09A;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+.SideCodeInline {
+  font-weight: DemiBold;
+  color: #000000;
+  background-color: #FFFDF5;
+  border: 1px;
+  border-style: solid;
+  border-color: #A1A09A;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+/* SideCodeOutput:*/
+.SideCodeOutput {
+  color: #000000;
+  background-color: #FFFDF5;
+  border: 1px;
+  border-style: solid;
+  border-color: #A1A09A;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.SideCodeOutputInline {
+  color: #000000;
+  background-color: #FFFDF5;
+  border: 1px;
+  border-style: solid;
+  border-color: #A1A09A;
+  margin-left: 66px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 8px;
+}
 /* DeployedCell:*/
 .DeployedCell {
   padding: 8px;
@@ -1997,57 +2388,87 @@ Floor[--------------------------------------------------]
 }
 /* Paste:*/
 .Paste {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .PasteInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* Evaluate:*/
 .Evaluate {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .EvaluateInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* EvaluateCell:*/
 .EvaluateCell {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .EvaluateCellInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* CopyEvaluate:*/
 .CopyEvaluate {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .CopyEvaluateInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* CopyEvaluateCell:*/
 .CopyEvaluateCell {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .CopyEvaluateCellInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* HistoryCurrentPage:*/
@@ -2107,10 +2528,11 @@ Floor[--------------------------------------------------]
 }
 /* CoordinateTooltipLabel:*/
 .CoordinateTooltipLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
   background-color: #FFFFE1;
   text-align: left;
@@ -2123,10 +2545,11 @@ Floor[--------------------------------------------------]
   padding-bottom: 1px;
 }
 .CoordinateTooltipLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
   background-color: #FFFFE1;
   text-align: left;
@@ -2164,42 +2587,129 @@ Floor[--------------------------------------------------]
 }
 /* CellInsertionMenu:*/
 .CellInsertionMenu {
-  font-weight: Bold;
-  line-height: 1.08333;
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-align: left;
+  line-height: 1.11111;
   padding: 8px;
 }
 .CellInsertionMenuInline {
-  font-weight: Bold;
-  line-height: 1.08333;
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-align: left;
+  line-height: 1.11111;
   padding: 8px;
 }
 /* CellInsertionMenuShortcut:*/
 .CellInsertionMenuShortcut {
-  font-weight: Plain;
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
   color: #808080;
+  text-align: left;
+  line-height: 1.11111;
   padding: 8px;
 }
 .CellInsertionMenuShortcutInline {
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: bold;
+  color: #808080;
+  text-align: left;
+  line-height: 1.11111;
+  padding: 8px;
+}
+/* CellInsertionMenuDefaultLabel:*/
+.CellInsertionMenuDefaultLabel {
+  /* font-size: -2 + Inherited is not currently supported */
+  font-family: Segoe UI;
+  font-style: normal;
   font-weight: Plain;
   color: #808080;
+  text-align: left;
+  line-height:                1
+If[1. + --------------- < 0, 0, System`Convert`CSSDump`c$161421]
+        -2. + Inherited;
+  padding: 8px;
+}
+.CellInsertionMenuDefaultLabelInline {
+  /* font-size: -2 + Inherited is not currently supported */
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: Plain;
+  color: #808080;
+  text-align: left;
+  line-height:                1
+If[1. + --------------- < 0, 0, System`Convert`CSSDump`c$161437]
+        -2. + Inherited;
+  padding: 8px;
+}
+/* CellInsertionMenuStyleShortcutLabel:*/
+.CellInsertionMenuStyleShortcutLabel {
+  /* font-size: -1 + Inherited is not currently supported */
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: Plain;
+  color: #808080;
+  text-align: left;
+  line-height:                1
+If[1. + --------------- < 0, 0, System`Convert`CSSDump`c$161453]
+        -1. + Inherited;
+  padding: 8px;
+}
+.CellInsertionMenuStyleShortcutLabelInline {
+  /* font-size: -1 + Inherited is not currently supported */
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: Plain;
+  color: #808080;
+  text-align: left;
+  line-height:                1
+If[1. + --------------- < 0, 0, System`Convert`CSSDump`c$161469]
+        -1. + Inherited;
+  padding: 8px;
+}
+/* RootBox:*/
+.RootBox {
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
+  padding: 8px;
+}
+.RootBoxInline {
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* ActionMenu:*/
 .ActionMenu {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
   text-align: left;
   padding: 8px;
 }
 .ActionMenuInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
   text-align: left;
   padding: 8px;
 }
 /* ActionMenuLabel:*/
 .ActionMenuLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2208,7 +2718,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .ActionMenuLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2227,13 +2737,13 @@ Floor[--------------------------------------------------]
 }
 /* AnimateLabel:*/
 .AnimateLabel {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
 }
 .AnimateLabelInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
@@ -2249,13 +2759,19 @@ Floor[--------------------------------------------------]
 }
 /* GenericButton:*/
 .GenericButton {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .GenericButtonInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* Checkbox:*/
@@ -2302,46 +2818,64 @@ Floor[--------------------------------------------------]
 }
 /* ControlStyle:*/
 .ControlStyle {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .ControlStyleInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* ControlStyleLight:*/
 .ControlStyleLight {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
   color: #595959;
+  text-align: left;
   padding: 8px;
 }
 .ControlStyleLightInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
   color: #595959;
+  text-align: left;
   padding: 8px;
 }
 /* ControlStyleLightBold:*/
 .ControlStyleLightBold {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
   font-weight: Bold;
+  text-decoration: none;
   color: #595959;
+  text-align: left;
   padding: 8px;
 }
 .ControlStyleLightBoldInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
   font-weight: Bold;
+  text-decoration: none;
   color: #595959;
+  text-align: left;
   padding: 8px;
 }
 /* DialogStyle:*/
 .DialogStyle {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2349,7 +2883,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .DialogStyleInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2358,13 +2892,19 @@ Floor[--------------------------------------------------]
 }
 /* FileNameSetter:*/
 .FileNameSetter {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 .FileNameSetterInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
+  text-align: left;
   padding: 8px;
 }
 /* FileNameSetterBoxes:*/
@@ -2426,16 +2966,22 @@ Floor[--------------------------------------------------]
 .Graphics {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .GraphicsInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -2489,16 +3035,22 @@ Floor[--------------------------------------------------]
 .Graphics3D {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .Graphics3DInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -2570,16 +3122,22 @@ Floor[--------------------------------------------------]
 .ImageGraphics {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .ImageGraphicsInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -2587,16 +3145,22 @@ Floor[--------------------------------------------------]
 .Image3DGraphics3D {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .Image3DGraphics3DInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -2604,16 +3168,22 @@ Floor[--------------------------------------------------]
 .MeshGraphics {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .MeshGraphicsInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -2621,16 +3191,22 @@ Floor[--------------------------------------------------]
 .MeshGraphics3D {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .MeshGraphics3DInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -2638,16 +3214,22 @@ Floor[--------------------------------------------------]
 .NetworkGraphics {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .NetworkGraphicsInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -2728,6 +3310,13 @@ Floor[--------------------------------------------------]
 .LabeledSliderLabelInline {
   padding: 8px;
 }
+/* LineWrapParts:*/
+.LineWrapParts {
+  padding: 8px;
+}
+.LineWrapPartsInline {
+  padding: 8px;
+}
 /* ListAnimate:*/
 .ListAnimate {
   font-weight: normal;
@@ -2739,27 +3328,31 @@ Floor[--------------------------------------------------]
 }
 /* ListAnimateLabel:*/
 .ListAnimateLabel {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
 }
 .ListAnimateLabelInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
 }
 /* ListPicker:*/
 .ListPicker {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
   text-align: left;
   padding: 8px;
 }
 .ListPickerInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
+  font-style: normal;
+  text-decoration: none;
   text-align: left;
   padding: 8px;
 }
@@ -2772,13 +3365,13 @@ Floor[--------------------------------------------------]
 }
 /* Manipulator:*/
 .Manipulator {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
 }
 .ManipulatorInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
@@ -2794,13 +3387,13 @@ Floor[--------------------------------------------------]
 }
 /* ManipulateLabel:*/
 .ManipulateLabel {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
 }
 .ManipulateLabelInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-weight: normal;
   padding: 8px;
@@ -2816,7 +3409,7 @@ Floor[--------------------------------------------------]
 }
 /* MenuLabel:*/
 .MenuLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2824,7 +3417,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .MenuLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2840,13 +3433,13 @@ Floor[--------------------------------------------------]
 }
 /* MenuViewLabel:*/
 .MenuViewLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   text-align: left;
   padding: 8px;
 }
 .MenuViewLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   text-align: left;
   padding: 8px;
@@ -2888,7 +3481,7 @@ Floor[--------------------------------------------------]
 }
 /* Panel:*/
 .Panel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2897,7 +3490,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .PanelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2907,7 +3500,7 @@ Floor[--------------------------------------------------]
 }
 /* PanelLabel:*/
 .PanelLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2916,7 +3509,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .PanelLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2926,20 +3519,20 @@ Floor[--------------------------------------------------]
 }
 /* PopupMenu:*/
 .PopupMenu {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   text-align: left;
   padding: 8px;
 }
 .PopupMenuInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   text-align: left;
   padding: 8px;
 }
 /* PopupMenuLabel:*/
 .PopupMenuLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -2948,7 +3541,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .PopupMenuLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -3062,10 +3655,11 @@ Floor[--------------------------------------------------]
 }
 /* TooltipLabel:*/
 .TooltipLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
   background-color: #FFFFE1;
   text-align: left;
@@ -3078,10 +3672,11 @@ Floor[--------------------------------------------------]
   padding-bottom: 1px;
 }
 .TooltipLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
   background-color: #FFFFE1;
   text-align: left;
@@ -3132,16 +3727,22 @@ Floor[--------------------------------------------------]
 .GeoGraphics {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
 .GeoGraphicsInline {
   font-size: 10px;
   font-family: Arial;
+  font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #000000;
+  text-align: left;
   margin-left: 4px;
   padding: 8px;
 }
@@ -3200,13 +3801,15 @@ Floor[--------------------------------------------------]
 }
 /* TableViewLabels:*/
 .TableViewLabels {
-  font-weight: Bold;
-  color: #3F3F3F;
+  /* font-size: 0.9 Inherited is not currently supported */
+  font-weight: normal;
+  color: #737373;
   padding: 8px;
 }
 .TableViewLabelsInline {
-  font-weight: Bold;
-  color: #3F3F3F;
+  /* font-size: 0.9 Inherited is not currently supported */
+  font-weight: normal;
+  color: #737373;
   padding: 8px;
 }
 /* Mouseover:*/
@@ -3258,11 +3861,25 @@ Floor[--------------------------------------------------]
 .HyperlinkTemplateInline {
   padding: 8px;
 }
+/* C:*/
+.C {
+  padding: 8px;
+}
+.CInline {
+  padding: 8px;
+}
 /* CantorStaircase:*/
 .CantorStaircase {
   padding: 8px;
 }
 .CantorStaircaseInline {
+  padding: 8px;
+}
+/* ConditionalExpression:*/
+.ConditionalExpression {
+  padding: 8px;
+}
+.ConditionalExpressionInline {
   padding: 8px;
 }
 /* Conjugate:*/
@@ -3291,6 +3908,13 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .CosIntegralInline {
+  padding: 8px;
+}
+/* CTraditional:*/
+.CTraditional {
+  padding: 8px;
+}
+.CTraditionalInline {
   padding: 8px;
 }
 /* Det:*/
@@ -3382,6 +4006,13 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .MixedFractionInline {
+  padding: 8px;
+}
+/* NumericalApproximation:*/
+.NumericalApproximation {
+  padding: 8px;
+}
+.NumericalApproximationInline {
   padding: 8px;
 }
 /* PartitionsP:*/
@@ -3622,6 +4253,90 @@ Floor[--------------------------------------------------]
 .StirlingS2Inline {
   padding: 8px;
 }
+/* NonNegativeConeString:*/
+.NonNegativeConeString {
+  padding: 8px;
+}
+.NonNegativeConeStringInline {
+  padding: 8px;
+}
+/* SemidefiniteConeString:*/
+.SemidefiniteConeString {
+  padding: 8px;
+}
+.SemidefiniteConeStringInline {
+  padding: 8px;
+}
+/* NormConeString:*/
+.NormConeString {
+  padding: 8px;
+}
+.NormConeStringInline {
+  padding: 8px;
+}
+/* ExponentialConeString:*/
+.ExponentialConeString {
+  padding: 8px;
+}
+.ExponentialConeStringInline {
+  padding: 8px;
+}
+/* DualExponentialConeString:*/
+.DualExponentialConeString {
+  padding: 8px;
+}
+.DualExponentialConeStringInline {
+  padding: 8px;
+}
+/* PowerConeString:*/
+.PowerConeString {
+  padding: 8px;
+}
+.PowerConeStringInline {
+  padding: 8px;
+}
+/* DualPowerConeString:*/
+.DualPowerConeString {
+  padding: 8px;
+}
+.DualPowerConeStringInline {
+  padding: 8px;
+}
+/* NonNegativeConeList:*/
+.NonNegativeConeList {
+  padding: 8px;
+}
+.NonNegativeConeListInline {
+  padding: 8px;
+}
+/* SemidefiniteConeList:*/
+.SemidefiniteConeList {
+  padding: 8px;
+}
+.SemidefiniteConeListInline {
+  padding: 8px;
+}
+/* NormConeList:*/
+.NormConeList {
+  padding: 8px;
+}
+.NormConeListInline {
+  padding: 8px;
+}
+/* PowerConeList:*/
+.PowerConeList {
+  padding: 8px;
+}
+.PowerConeListInline {
+  padding: 8px;
+}
+/* DualPowerConeList:*/
+.DualPowerConeList {
+  padding: 8px;
+}
+.DualPowerConeListInline {
+  padding: 8px;
+}
 /* ChampernowneNumber:*/
 .ChampernowneNumber {
   padding: 8px;
@@ -3648,6 +4363,66 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .StieltjesGamma2Inline {
+  padding: 8px;
+}
+/* SystemsModelGrid00:*/
+.SystemsModelGrid00 {
+  padding: 8px;
+}
+.SystemsModelGrid00Inline {
+  padding: 8px;
+}
+/* SystemsModelGrid01:*/
+.SystemsModelGrid01 {
+  padding: 8px;
+}
+.SystemsModelGrid01Inline {
+  padding: 8px;
+}
+/* SystemsModelGrid02:*/
+.SystemsModelGrid02 {
+  padding: 8px;
+}
+.SystemsModelGrid02Inline {
+  padding: 8px;
+}
+/* SystemsModelGrid10:*/
+.SystemsModelGrid10 {
+  padding: 8px;
+}
+.SystemsModelGrid10Inline {
+  padding: 8px;
+}
+/* SystemsModelGrid11:*/
+.SystemsModelGrid11 {
+  padding: 8px;
+}
+.SystemsModelGrid11Inline {
+  padding: 8px;
+}
+/* SystemsModelGrid12:*/
+.SystemsModelGrid12 {
+  padding: 8px;
+}
+.SystemsModelGrid12Inline {
+  padding: 8px;
+}
+/* SystemsModelSuperscript:*/
+.SystemsModelSuperscript {
+  color: #000000;
+  padding: 8px;
+}
+.SystemsModelSuperscriptInline {
+  color: #000000;
+  padding: 8px;
+}
+/* SystemsModelMinimalElement:*/
+.SystemsModelMinimalElement {
+  color: #A6998C;
+  padding: 8px;
+}
+.SystemsModelMinimalElementInline {
+  color: #A6998C;
   padding: 8px;
 }
 /* SystemsModelDelay:*/
@@ -4567,6 +5342,20 @@ Floor[--------------------------------------------------]
 .CardinalBSplineBasisInline {
   padding: 8px;
 }
+/* DirectedEdge:*/
+.DirectedEdge {
+  padding: 8px;
+}
+.DirectedEdgeInline {
+  padding: 8px;
+}
+/* UndirectedEdge:*/
+.UndirectedEdge {
+  padding: 8px;
+}
+.UndirectedEdgeInline {
+  padding: 8px;
+}
 /* AiryAi:*/
 .AiryAi {
   padding: 8px;
@@ -5321,6 +6110,90 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RealsInline {
+  padding: 8px;
+}
+/* PositiveReals:*/
+.PositiveReals {
+  padding: 8px;
+}
+.PositiveRealsInline {
+  padding: 8px;
+}
+/* NonNegativeReals:*/
+.NonNegativeReals {
+  padding: 8px;
+}
+.NonNegativeRealsInline {
+  padding: 8px;
+}
+/* NonPositiveReals:*/
+.NonPositiveReals {
+  padding: 8px;
+}
+.NonPositiveRealsInline {
+  padding: 8px;
+}
+/* NegativeReals:*/
+.NegativeReals {
+  padding: 8px;
+}
+.NegativeRealsInline {
+  padding: 8px;
+}
+/* PositiveRationals:*/
+.PositiveRationals {
+  padding: 8px;
+}
+.PositiveRationalsInline {
+  padding: 8px;
+}
+/* NonNegativeRationals:*/
+.NonNegativeRationals {
+  padding: 8px;
+}
+.NonNegativeRationalsInline {
+  padding: 8px;
+}
+/* NonPositiveRationals:*/
+.NonPositiveRationals {
+  padding: 8px;
+}
+.NonPositiveRationalsInline {
+  padding: 8px;
+}
+/* NegativeRationals:*/
+.NegativeRationals {
+  padding: 8px;
+}
+.NegativeRationalsInline {
+  padding: 8px;
+}
+/* PositiveIntegers:*/
+.PositiveIntegers {
+  padding: 8px;
+}
+.PositiveIntegersInline {
+  padding: 8px;
+}
+/* NonNegativeIntegers:*/
+.NonNegativeIntegers {
+  padding: 8px;
+}
+.NonNegativeIntegersInline {
+  padding: 8px;
+}
+/* NonPositiveIntegers:*/
+.NonPositiveIntegers {
+  padding: 8px;
+}
+.NonPositiveIntegersInline {
+  padding: 8px;
+}
+/* NegativeIntegers:*/
+.NegativeIntegers {
+  padding: 8px;
+}
+.NegativeIntegersInline {
   padding: 8px;
 }
 /* ArithmeticGeometricMean:*/
@@ -6159,41 +7032,61 @@ Floor[--------------------------------------------------]
 }
 /* UnitTooltip:*/
 .UnitTooltip {
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000000;
   background-color: ;
+  text-align: left;
   border: 1px;
   border-style: solid;
   border-color: ;
-  padding: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 .UnitTooltipInline {
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  color: #000000;
   background-color: ;
+  text-align: left;
   border: 1px;
   border-style: solid;
   border-color: ;
-  padding: 8px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 /* UnitTooltipPrefix:*/
 .UnitTooltipPrefix {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Verdana;
   color: #808080;
   padding: 8px;
 }
 .UnitTooltipPrefixInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Verdana;
   color: #808080;
   padding: 8px;
 }
 /* UnitTooltipText:*/
 .UnitTooltipText {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Verdana;
   color: #333333;
   padding: 8px;
 }
 .UnitTooltipTextInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Verdana;
   color: #333333;
   padding: 8px;
@@ -6634,6 +7527,22 @@ Floor[--------------------------------------------------]
 .EntityValueInline {
   padding: 8px;
 }
+/* EntityCommonNameLabel:*/
+.EntityCommonNameLabel {
+  color: #653510;
+  padding: 8px;
+}
+.EntityCommonNameLabelInline {
+  color: #653510;
+  padding: 8px;
+}
+/* EntityTraditionalFramed:*/
+.EntityTraditionalFramed {
+  padding: 8px;
+}
+.EntityTraditionalFramedInline {
+  padding: 8px;
+}
 /* GeneralizedEntityToggle:*/
 .GeneralizedEntityToggle {
   padding: 8px;
@@ -6890,6 +7799,153 @@ Floor[--------------------------------------------------]
   color: #653510;
   padding: 8px;
 }
+/* EntityWithIcon:*/
+.EntityWithIcon {
+  padding: 8px;
+}
+.EntityWithIconInline {
+  padding: 8px;
+}
+/* EntityPropertyWithIcon:*/
+.EntityPropertyWithIcon {
+  padding: 8px;
+}
+.EntityPropertyWithIconInline {
+  padding: 8px;
+}
+/* EntityIcon:*/
+.EntityIcon {
+  padding: 8px;
+}
+.EntityIconInline {
+  padding: 8px;
+}
+/* ExternalIdentifier:*/
+.ExternalIdentifier {
+  padding: 8px;
+}
+.ExternalIdentifierInline {
+  padding: 8px;
+}
+/* ExternalIdentifierURL:*/
+.ExternalIdentifierURL {
+  padding: 8px;
+}
+.ExternalIdentifierURLInline {
+  padding: 8px;
+}
+/* ExternalIdentifierTypeLabel:*/
+.ExternalIdentifierTypeLabel {
+  font-size: 11px;
+  color: #8499B4;
+  padding: 8px;
+}
+.ExternalIdentifierTypeLabelInline {
+  font-size: 11px;
+  color: #8499B4;
+  padding: 8px;
+}
+/* ExternalIdentifierLabel:*/
+.ExternalIdentifierLabel {
+  font-size: 12px;
+  color: #6488B8;
+  padding: 8px;
+}
+.ExternalIdentifierLabelInline {
+  font-size: 12px;
+  color: #6488B8;
+  padding: 8px;
+}
+/* ExternalIdentifierLabelHyperlinkMouseover:*/
+.ExternalIdentifierLabelHyperlinkMouseover {
+  font-size: 12px;
+  color: #63A1F1;
+  padding: 8px;
+}
+.ExternalIdentifierLabelHyperlinkMouseoverInline {
+  font-size: 12px;
+  color: #63A1F1;
+  padding: 8px;
+}
+/* IconizedName:*/
+.IconizedName {
+  /* font-size: 1 + Inherited is not currently supported */
+  color: #333333;
+  padding: 8px;
+}
+.IconizedNameInline {
+  /* font-size: 1 + Inherited is not currently supported */
+  color: #333333;
+  padding: 8px;
+}
+/* IconizedNameLight:*/
+.IconizedNameLight {
+  /* font-size: 1 + Inherited is not currently supported */
+  color: #898989;
+  padding: 8px;
+}
+.IconizedNameLightInline {
+  /* font-size: 1 + Inherited is not currently supported */
+  color: #898989;
+  padding: 8px;
+}
+/* IconizedCustomName:*/
+.IconizedCustomName {
+  font-style: italic;
+  color: #333333;
+  padding: 8px;
+}
+.IconizedCustomNameInline {
+  font-style: italic;
+  color: #333333;
+  padding: 8px;
+}
+/* IconizedItem:*/
+.IconizedItem {
+  color: #151515;
+  padding: 8px;
+}
+.IconizedItemInline {
+  color: #151515;
+  padding: 8px;
+}
+/* IconizedLabel:*/
+.IconizedLabel {
+  color: #A6A6A6;
+  padding: 8px;
+}
+.IconizedLabelInline {
+  color: #A6A6A6;
+  padding: 8px;
+}
+/* IconizedFrame:*/
+.IconizedFrame {
+  padding: 8px;
+}
+.IconizedFrameInline {
+  padding: 8px;
+}
+/* IconizedObjectIcon:*/
+.IconizedObjectIcon {
+  padding: 8px;
+}
+.IconizedObjectIconInline {
+  padding: 8px;
+}
+/* IconizedDefaultName:*/
+.IconizedDefaultName {
+  padding: 8px;
+}
+.IconizedDefaultNameInline {
+  padding: 8px;
+}
+/* IconizedObject:*/
+.IconizedObject {
+  padding: 8px;
+}
+.IconizedObjectInline {
+  padding: 8px;
+}
 /* NotebookObject:*/
 .NotebookObject {
   padding: 8px;
@@ -6974,6 +8030,91 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .TimeObjectInline {
+  padding: 8px;
+}
+/* AroundTiny:*/
+.AroundTiny {
+  /* font-size: 0.8 Inherited is not currently supported */
+  color: #666666;
+  padding: 8px;
+}
+.AroundTinyInline {
+  /* font-size: 0.8 Inherited is not currently supported */
+  color: #666666;
+  padding: 8px;
+}
+/* AroundSmall:*/
+.AroundSmall {
+  /* font-size: 0.9 Inherited is not currently supported */
+  color: #666666;
+  padding: 8px;
+}
+.AroundSmallInline {
+  /* font-size: 0.9 Inherited is not currently supported */
+  color: #666666;
+  padding: 8px;
+}
+/* Around:*/
+.Around {
+  padding: 8px;
+}
+.AroundInline {
+  padding: 8px;
+}
+/* AroundExp:*/
+.AroundExp {
+  padding: 8px;
+}
+.AroundExpInline {
+  padding: 8px;
+}
+/* AroundSeq:*/
+.AroundSeq {
+  padding: 8px;
+}
+.AroundSeqInline {
+  padding: 8px;
+}
+/* AroundSeqExp:*/
+.AroundSeqExp {
+  padding: 8px;
+}
+.AroundSeqExpInline {
+  padding: 8px;
+}
+/* AroundAsym:*/
+.AroundAsym {
+  padding: 8px;
+}
+.AroundAsymInline {
+  padding: 8px;
+}
+/* AroundAsymExp:*/
+.AroundAsymExp {
+  padding: 8px;
+}
+.AroundAsymExpInline {
+  padding: 8px;
+}
+/* AroundAsymSeq:*/
+.AroundAsymSeq {
+  padding: 8px;
+}
+.AroundAsymSeqInline {
+  padding: 8px;
+}
+/* AroundAsymSeqExp:*/
+.AroundAsymSeqExp {
+  padding: 8px;
+}
+.AroundAsymSeqExpInline {
+  padding: 8px;
+}
+/* VideoBox1:*/
+.VideoBox1 {
+  padding: 8px;
+}
+.VideoBox1Inline {
   padding: 8px;
 }
 /* TemplateBoxErrorDisplayStyle:*/
@@ -7573,7 +8714,7 @@ Floor[--------------------------------------------------]
 }
 /* CompatibilityControls:*/
 .CompatibilityControls {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   background-color: #EDEDED;
   border-left: 0px;
@@ -7592,7 +8733,7 @@ Floor[--------------------------------------------------]
   padding-bottom: 5px;
 }
 .CompatibilityControlsInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   background-color: #EDEDED;
   border-left: 0px;
@@ -7750,20 +8891,20 @@ Floor[--------------------------------------------------]
 }
 /* NotebookTemplateSlot:*/
 .NotebookTemplateSlot {
-  color: #FFFFFF;
+  color: #167E9C;
   padding: 8px;
 }
 .NotebookTemplateSlotInline {
-  color: #FFFFFF;
+  color: #167E9C;
   padding: 8px;
 }
 /* NotebookTemplateExpression:*/
 .NotebookTemplateExpression {
-  color: #46839C;
+  color: #000000;
   padding: 8px;
 }
 .NotebookTemplateExpressionInline {
-  color: #46839C;
+  color: #000000;
   padding: 8px;
 }
 /* NotebookTemplateSlotUI:*/
@@ -7780,11 +8921,25 @@ Floor[--------------------------------------------------]
 .NotebookTemplateExpressionUIInline {
   padding: 8px;
 }
+/* NotebookTemplateBlock:*/
+.NotebookTemplateBlock {
+  padding: 8px;
+}
+.NotebookTemplateBlockInline {
+  padding: 8px;
+}
 /* NotebookRepeatingBlock:*/
 .NotebookRepeatingBlock {
   padding: 8px;
 }
 .NotebookRepeatingBlockInline {
+  padding: 8px;
+}
+/* NotebookConditionalBlock:*/
+.NotebookConditionalBlock {
+  padding: 8px;
+}
+.NotebookConditionalBlockInline {
   padding: 8px;
 }
 /* NotebookTemplateCellBehavior:*/
@@ -7796,9 +8951,10 @@ Floor[--------------------------------------------------]
 }
 /* NotebookTemplateDockedCell:*/
 .NotebookTemplateDockedCell {
-  font-size: 11px;
-  font-family: Sans Serif;
-  color: #6B6B6B;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #757575;
   border-left: 0px;
   border-right: 1px;
   border-top: 0px;
@@ -7815,9 +8971,10 @@ Floor[--------------------------------------------------]
   padding-bottom: -2px;
 }
 .NotebookTemplateDockedCellInline {
-  font-size: 11px;
-  font-family: Sans Serif;
-  color: #6B6B6B;
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #757575;
   border-left: 0px;
   border-right: 1px;
   border-top: 0px;
@@ -7939,7 +9096,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistCompletion:*/
 .CodeAssistCompletion {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -7955,7 +9112,7 @@ Floor[--------------------------------------------------]
   padding-bottom: 7px;
 }
 .CodeAssistCompletionInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -7972,7 +9129,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistTemplate:*/
 .CodeAssistTemplate {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -7988,7 +9145,7 @@ Floor[--------------------------------------------------]
   padding-bottom: 9px;
 }
 .CodeAssistTemplateInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -8038,7 +9195,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistCompletionHighlight:*/
 .CodeAssistCompletionHighlight {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -8055,7 +9212,7 @@ Floor[--------------------------------------------------]
   padding-bottom: 7px;
 }
 .CodeAssistCompletionHighlightInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -8073,7 +9230,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistVariableCompletion:*/
 .CodeAssistVariableCompletion {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -8089,7 +9246,7 @@ Floor[--------------------------------------------------]
   padding-bottom: 7px;
 }
 .CodeAssistVariableCompletionInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -8106,7 +9263,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistVariableCompletionHighlight:*/
 .CodeAssistVariableCompletionHighlight {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -8123,7 +9280,7 @@ Floor[--------------------------------------------------]
   padding-bottom: 7px;
 }
 .CodeAssistVariableCompletionHighlightInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
@@ -8141,7 +9298,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistSeparator:*/
 .CodeAssistSeparator {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8151,7 +9308,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .CodeAssistSeparatorInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8162,7 +9319,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistSeparatorHighlight:*/
 .CodeAssistSeparatorHighlight {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8172,7 +9329,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .CodeAssistSeparatorHighlightInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8183,7 +9340,7 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistUsage:*/
 .CodeAssistUsage {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
@@ -8193,7 +9350,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .CodeAssistUsageInline {
-  font-size: 11px;
+  font-size: 8px;
   font-family: Helvetica;
   font-style: normal;
   font-weight: normal;
@@ -8204,10 +9361,11 @@ Floor[--------------------------------------------------]
 }
 /* FunctionTemplateTooltip:*/
 .FunctionTemplateTooltip {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #333333;
   background-color: #FEFDD4;
   text-align: left;
@@ -8220,10 +9378,11 @@ Floor[--------------------------------------------------]
   padding-bottom: 5px;
 }
 .FunctionTemplateTooltipInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
+  text-decoration: none;
   color: #333333;
   background-color: #FEFDD4;
   text-align: left;
@@ -8237,14 +9396,14 @@ Floor[--------------------------------------------------]
 }
 /* FunctionTemplateArgument:*/
 .FunctionTemplateArgument {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Times;
   font-style: italic;
   font-weight: normal;
   padding: 8px;
 }
 .FunctionTemplateArgumentInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Times;
   font-style: italic;
   font-weight: normal;
@@ -8252,22 +9411,23 @@ Floor[--------------------------------------------------]
 }
 /* FunctionTemplateHighlight:*/
 .FunctionTemplateHighlight {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-weight: bold;
   padding: 8px;
 }
 .FunctionTemplateHighlightInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-weight: bold;
   padding: 8px;
 }
 /* CodeAssistString:*/
 .CodeAssistString {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
+  font-weight: DemiBold;
   color: #666666;
   background-color: #F0F0F0;
   text-align: left;
@@ -8280,9 +9440,10 @@ Floor[--------------------------------------------------]
   padding-bottom: 7px;
 }
 .CodeAssistStringInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
+  font-weight: DemiBold;
   color: #666666;
   background-color: #F0F0F0;
   text-align: left;
@@ -8296,10 +9457,11 @@ Floor[--------------------------------------------------]
 }
 /* CodeAssistCharCompletion:*/
 .CodeAssistCharCompletion {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
+  color: #1A1A1A;
   background-color: #F0F0F0;
   text-align: left;
   border: 1px;
@@ -8311,10 +9473,11 @@ Floor[--------------------------------------------------]
   padding-bottom: 7px;
 }
 .CodeAssistCharCompletionInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Dynamic[CurrentValue[{StyleHints, CodeFont}]];
   font-style: normal;
   font-weight: DemiBold;
+  color: #1A1A1A;
   background-color: #F0F0F0;
   text-align: left;
   border: 1px;
@@ -8387,6 +9550,27 @@ Floor[--------------------------------------------------]
   margin-bottom: 5px;
   padding: 8px;
 }
+/* CodeAssistReference:*/
+.CodeAssistReference {
+  font-size: 9px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  background-color: #FFFFFF;
+  text-align: left;
+  padding: 8px;
+}
+.CodeAssistReferenceInline {
+  font-size: 9px;
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  color: #333333;
+  background-color: #FFFFFF;
+  text-align: left;
+  padding: 8px;
+}
 /* SuggestionsBar:*/
 .SuggestionsBar {
   font-size: 100%;
@@ -8400,7 +9584,7 @@ Floor[--------------------------------------------------]
 }
 /* SuggestionsBarText:*/
 .SuggestionsBarText {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8408,7 +9592,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .SuggestionsBarTextInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8417,75 +9601,75 @@ Floor[--------------------------------------------------]
 }
 /* SuggestionsBarControl:*/
 .SuggestionsBarControl {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 .SuggestionsBarControlInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 /* SuggestionsBarControlActive:*/
 .SuggestionsBarControlActive {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 .SuggestionsBarControlActiveInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 /* SuggestionsBarMore:*/
 .SuggestionsBarMore {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 .SuggestionsBarMoreInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 /* SuggestionsBarMoreActive:*/
 .SuggestionsBarMoreActive {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 .SuggestionsBarMoreActiveInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 /* SuggestionsBarSemanticControl:*/
 .SuggestionsBarSemanticControl {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
@@ -8493,7 +9677,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .SuggestionsBarSemanticControlInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
@@ -8502,24 +9686,24 @@ Floor[--------------------------------------------------]
 }
 /* SuggestionsBarSemanticControlActive:*/
 .SuggestionsBarSemanticControlActive {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 .SuggestionsBarSemanticControlActiveInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: italic;
   font-weight: normal;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 /* SuggestionsBarCategory:*/
 .SuggestionsBarCategory {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8527,7 +9711,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .SuggestionsBarCategoryInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8536,24 +9720,24 @@ Floor[--------------------------------------------------]
 }
 /* SuggestionsBarMenuControl:*/
 .SuggestionsBarMenuControl {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 .SuggestionsBarMenuControlInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 /* SuggestionsBarHiddenFunctionLabel:*/
 .SuggestionsBarHiddenFunctionLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8561,11 +9745,52 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .SuggestionsBarHiddenFunctionLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
   color: #808080;
+  padding: 8px;
+}
+/* SuggestionsBarButtonFrame:*/
+.SuggestionsBarButtonFrame {
+  padding: 8px;
+}
+.SuggestionsBarButtonFrameInline {
+  padding: 8px;
+}
+/* SuggestionsBarButtonLabel:*/
+.SuggestionsBarButtonLabel {
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #476686;
+  padding: 8px;
+}
+.SuggestionsBarButtonLabelInline {
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #476686;
+  padding: 8px;
+}
+/* SuggestionsBarButtonLabelActive:*/
+.SuggestionsBarButtonLabelActive {
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #E55F11;
+  padding: 8px;
+}
+.SuggestionsBarButtonLabelActiveInline {
+  font-size: 9px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #E55F11;
   padding: 8px;
 }
 /* OutputSizeLimit:*/
@@ -8586,7 +9811,7 @@ Floor[--------------------------------------------------]
 }
 /* OSLText:*/
 .OSLText {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8594,7 +9819,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .OSLTextInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8603,41 +9828,41 @@ Floor[--------------------------------------------------]
 }
 /* OSLControl:*/
 .OSLControl {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 .OSLControlInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #2D4A61;
+  color: #476686;
   padding: 8px;
 }
 /* OSLControlActive:*/
 .OSLControlActive {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 .OSLControlActiveInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
-  color: #F45F11;
+  color: #E55F11;
   padding: 8px;
 }
 /* RibbonText:*/
 .RibbonText {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8645,7 +9870,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonTextInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8654,7 +9879,7 @@ Floor[--------------------------------------------------]
 }
 /* RibbonBold:*/
 .RibbonBold {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8662,7 +9887,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonBoldInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8671,7 +9896,7 @@ Floor[--------------------------------------------------]
 }
 /* RibbonWhite:*/
 .RibbonWhite {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8679,7 +9904,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonWhiteInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8688,7 +9913,7 @@ Floor[--------------------------------------------------]
 }
 /* RibbonTitle:*/
 .RibbonTitle {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8696,7 +9921,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonTitleInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8705,7 +9930,7 @@ Floor[--------------------------------------------------]
 }
 /* RibbonTitleActive:*/
 .RibbonTitleActive {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8713,7 +9938,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonTitleActiveInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8722,7 +9947,7 @@ Floor[--------------------------------------------------]
 }
 /* RibbonCaption:*/
 .RibbonCaption {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8730,7 +9955,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonCaptionInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: normal;
@@ -8739,7 +9964,7 @@ Floor[--------------------------------------------------]
 }
 /* RibbonTabLabel:*/
 .RibbonTabLabel {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8747,7 +9972,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonTabLabelInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8756,7 +9981,7 @@ Floor[--------------------------------------------------]
 }
 /* RibbonTabLabelActive:*/
 .RibbonTabLabelActive {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8764,7 +9989,7 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .RibbonTabLabelActiveInline {
-  font-size: 12px;
+  font-size: 9px;
   font-family: Segoe UI;
   font-style: normal;
   font-weight: bold;
@@ -8849,6 +10074,426 @@ Floor[--------------------------------------------------]
   padding: 8px;
 }
 .SummaryEmbedButtonInline {
+  padding: 8px;
+}
+/* NumericalApproximationElider:*/
+.NumericalApproximationElider {
+  color: #666666;
+  padding: 8px;
+}
+.NumericalApproximationEliderInline {
+  color: #666666;
+  padding: 8px;
+}
+/* FormPanel:*/
+.FormPanel {
+  padding: 8px;
+}
+.FormPanelInline {
+  padding: 8px;
+}
+/* FormTitle:*/
+.FormTitle {
+  font-size: 20px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #333333;
+  padding: 8px;
+}
+.FormTitleInline {
+  font-size: 20px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #333333;
+  padding: 8px;
+}
+/* FormDescription:*/
+.FormDescription {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #333333;
+  padding: 8px;
+}
+.FormDescriptionInline {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #333333;
+  padding: 8px;
+}
+/* FormLabel:*/
+.FormLabel {
+  font-size: 13px;
+  font-family: Source Sans Pro;
+  font-weight: SemiBold;
+  color: #646464;
+  padding: 8px;
+}
+.FormLabelInline {
+  font-size: 13px;
+  font-family: Source Sans Pro;
+  font-weight: SemiBold;
+  color: #646464;
+  padding: 8px;
+}
+/* FormSublabel:*/
+.FormSublabel {
+  font-size: 12px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #646464;
+  padding: 8px;
+}
+.FormSublabelInline {
+  font-size: 12px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #646464;
+  padding: 8px;
+}
+/* FormField:*/
+.FormField {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #333333;
+  padding: 8px;
+}
+.FormFieldInline {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #333333;
+  padding: 8px;
+}
+/* FormFieldHint:*/
+.FormFieldHint {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-style: italic;
+  font-weight: normal;
+  color: #A6A6A6;
+  padding: 8px;
+}
+.FormFieldHintInline {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-style: italic;
+  font-weight: normal;
+  color: #A6A6A6;
+  padding: 8px;
+}
+/* FormFailure:*/
+.FormFailure {
+  font-size: 12px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #DD1100;
+  padding: 8px;
+}
+.FormFailureInline {
+  font-size: 12px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #DD1100;
+  padding: 8px;
+}
+/* FormHelp:*/
+.FormHelp {
+  font-size: 12px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #A6A6A6;
+  padding: 8px;
+}
+.FormHelpInline {
+  font-size: 12px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #A6A6A6;
+  padding: 8px;
+}
+/* FormDefaultButton:*/
+.FormDefaultButton {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #FFFFFF;
+  padding: 8px;
+}
+.FormDefaultButtonInline {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #FFFFFF;
+  padding: 8px;
+}
+/* FormCancelButton:*/
+.FormCancelButton {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #646464;
+  padding: 8px;
+}
+.FormCancelButtonInline {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #646464;
+  padding: 8px;
+}
+/* FormUtilityButton:*/
+.FormUtilityButton {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #646464;
+  padding: 8px;
+}
+.FormUtilityButtonInline {
+  font-size: 14px;
+  font-family: Source Sans Pro;
+  font-weight: normal;
+  color: #646464;
+  padding: 8px;
+}
+/* NaturalLanguageInputField:*/
+.NaturalLanguageInputField {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: normal;
+  padding: 8px;
+}
+.NaturalLanguageInputFieldInline {
+  font-size: 14px;
+  font-family: Helvetica;
+  font-weight: normal;
+  padding: 8px;
+}
+/* NaturalLanguageControlBar:*/
+.NaturalLanguageControlBar {
+  font-size: 11px;
+  padding: 8px;
+}
+.NaturalLanguageControlBarInline {
+  font-size: 11px;
+  padding: 8px;
+}
+/* NaturalLanguageControlBarButton:*/
+.NaturalLanguageControlBarButton {
+  font-size: 11px;
+  color: #476686;
+  padding: 8px;
+}
+.NaturalLanguageControlBarButtonInline {
+  font-size: 11px;
+  color: #476686;
+  padding: 8px;
+}
+/* NaturalLanguageControlBarButtonActive:*/
+.NaturalLanguageControlBarButtonActive {
+  font-size: 11px;
+  color: #E55F11;
+  padding: 8px;
+}
+.NaturalLanguageControlBarButtonActiveInline {
+  font-size: 11px;
+  color: #E55F11;
+  padding: 8px;
+}
+/* NaturalLanguageControlBarButtonSelected:*/
+.NaturalLanguageControlBarButtonSelected {
+  font-size: 11px;
+  color: #FFFFFF;
+  padding: 8px;
+}
+.NaturalLanguageControlBarButtonSelectedInline {
+  font-size: 11px;
+  color: #FFFFFF;
+  padding: 8px;
+}
+/* NaturalLanguageAssumptions:*/
+.NaturalLanguageAssumptions {
+  font-size: 11px;
+  font-family: Roboto;
+  color: #767777;
+  line-height: 1;
+  padding: 8px;
+}
+.NaturalLanguageAssumptionsInline {
+  font-size: 11px;
+  font-family: Roboto;
+  color: #767777;
+  line-height: 1;
+  padding: 8px;
+}
+/* NaturalLanguageAssumptionLink:*/
+.NaturalLanguageAssumptionLink {
+  color: #476686;
+  padding: 8px;
+}
+.NaturalLanguageAssumptionLinkInline {
+  color: #476686;
+  padding: 8px;
+}
+/* NaturalLanguageAssumptionLinkActive:*/
+.NaturalLanguageAssumptionLinkActive {
+  color: #E55F11;
+  padding: 8px;
+}
+.NaturalLanguageAssumptionLinkActiveInline {
+  color: #E55F11;
+  padding: 8px;
+}
+/* NaturalLanguageFailure:*/
+.NaturalLanguageFailure {
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #333333;
+  line-height: 1;
+  padding: 8px;
+}
+.NaturalLanguageFailureInline {
+  font-size: 12px;
+  font-family: Roboto;
+  font-weight: normal;
+  color: #333333;
+  line-height: 1;
+  padding: 8px;
+}
+/* InformationTitleText:*/
+.InformationTitleText {
+  font-size: 9px;
+  font-family: Segoe UI;
+  color: #777777;
+  padding: 8px;
+}
+.InformationTitleTextInline {
+  font-size: 9px;
+  font-family: Segoe UI;
+  color: #777777;
+  padding: 8px;
+}
+/* InformationTitleBackground:*/
+.InformationTitleBackground {
+  padding: 8px;
+}
+.InformationTitleBackgroundInline {
+  padding: 8px;
+}
+/* InformationGenericSubtitleBackground:*/
+.InformationGenericSubtitleBackground {
+  padding: 8px;
+}
+.InformationGenericSubtitleBackgroundInline {
+  padding: 8px;
+}
+/* InformationUsageSubtitleBackground:*/
+.InformationUsageSubtitleBackground {
+  padding: 8px;
+}
+.InformationUsageSubtitleBackgroundInline {
+  padding: 8px;
+}
+/* InformationEntitySubtitleBackground:*/
+.InformationEntitySubtitleBackground {
+  padding: 8px;
+}
+.InformationEntitySubtitleBackgroundInline {
+  padding: 8px;
+}
+/* InformationTitleFrame:*/
+.InformationTitleFrame {
+  padding: 8px;
+}
+.InformationTitleFrameInline {
+  padding: 8px;
+}
+/* InformationGridFrame:*/
+.InformationGridFrame {
+  padding: 8px;
+}
+.InformationGridFrameInline {
+  padding: 8px;
+}
+/* InformationGridPlain:*/
+.InformationGridPlain {
+  font-weight: normal;
+  padding: 8px;
+}
+.InformationGridPlainInline {
+  font-weight: normal;
+  padding: 8px;
+}
+/* InformationUsageText:*/
+.InformationUsageText {
+  font-size: 12px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  padding: 8px;
+}
+.InformationUsageTextInline {
+  font-size: 12px;
+  font-family: Segoe UI;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  padding: 8px;
+}
+/* InformationGridGroupHeader:*/
+.InformationGridGroupHeader {
+  font-size: 12px;
+  font-weight: DemiBold;
+  color: #8C8C8C;
+  padding: 8px;
+}
+.InformationGridGroupHeaderInline {
+  font-size: 12px;
+  font-weight: DemiBold;
+  color: #8C8C8C;
+  padding: 8px;
+}
+/* InformationGridButton:*/
+.InformationGridButton {
+  font-size: 12px;
+  font-weight: DemiBold;
+  color: #0549A6;
+  padding: 8px;
+}
+.InformationGridButtonInline {
+  font-size: 12px;
+  font-weight: DemiBold;
+  color: #0549A6;
+  padding: 8px;
+}
+/* InformationGridLink:*/
+.InformationGridLink {
+  padding: 8px;
+}
+.InformationGridLinkInline {
+  padding: 8px;
+}
+/* InformationRowOpener:*/
+.InformationRowOpener {
+  color: #7C7C7C;
+  padding: 8px;
+}
+.InformationRowOpenerInline {
+  color: #7C7C7C;
+  padding: 8px;
+}
+/* InformationRowLabel:*/
+.InformationRowLabel {
+  color: #636363;
+  padding: 8px;
+}
+.InformationRowLabelInline {
+  color: #636363;
   padding: 8px;
 }
 
@@ -9223,6 +10868,39 @@ Floor[--------------------------------------------------]
   margin-left: 49pt;
   padding: 8pt;
 }
+/* Author:Printout*/
+.Author {
+  line-height: 1.16667;
+  margin-left: 49pt;
+  padding: 8pt;
+}
+.AuthorInline {
+  line-height: 1.16667;
+  margin-left: 49pt;
+  padding: 8pt;
+}
+/* Affiliation:Printout*/
+.Affiliation {
+  line-height: 1.16667;
+  margin-left: 49pt;
+  padding: 8pt;
+}
+.AffiliationInline {
+  line-height: 1.16667;
+  margin-left: 49pt;
+  padding: 8pt;
+}
+/* Abstract:Printout*/
+.Abstract {
+  line-height: 1.16667;
+  margin-left: 49pt;
+  padding: 8pt;
+}
+.AbstractInline {
+  line-height: 1.16667;
+  margin-left: 49pt;
+  padding: 8pt;
+}
 /* Header:Printout*/
 .Header {
   font-size: 100%;
@@ -9302,6 +10980,21 @@ Floor[--------------------------------------------------]
 }
 .PageNumberInline {
   font-size: 100%;
+  padding: 8pt;
+}
+/* ExternalLanguage:Printout*/
+.ExternalLanguage {
+  margin-left: 48pt;
+  margin-right: 10pt;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
+  padding: 8pt;
+}
+.ExternalLanguageInline {
+  margin-left: 48pt;
+  margin-right: 10pt;
+  margin-top: 8pt;
+  margin-bottom: 8pt;
   padding: 8pt;
 }
 /* PrintTemporary:Printout*/
